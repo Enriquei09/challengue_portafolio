@@ -1,0 +1,500 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #0a0a0a;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo-menu);
+    font-family: 'Raleway', sans-serif;
+    margin: 0px ;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+ol, ul, li {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+    color: white;
+    justify-content: space-between;
+}
+
+
+
+.cabecera__logo {
+    margin: 20px;
+    max-width: 80px; 
+}
+
+.cabecera__titulo {
+    position: absolute;
+    left: 80px;
+    font-size: 1.2rem;    
+    text-align:center ;
+}
+
+.navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:flex-end ;
+}
+.navegacion__lista {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.navegacion__elemento a {
+    font-size: 1rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('assets/Fondopresentacion.jpg');    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;    
+    padding: 20px;
+    color: white;
+}
+
+.presentacion__foto{
+    border-radius: 50%; 
+    height: fit-content;   
+    /*margin: 0px 25px;*/
+}
+
+.presentacion__contenedor{
+    margin: 10px;
+    text-align: justify;
+    
+}
+
+.presentacion__titulo{
+    font-size: 50px;
+}
+
+.presentacion__subtitulo{
+    font-size: 22px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('assets/fondo2.jpg');  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(95, 158, 160, 0.253);
+    display: flex;
+    position:center;
+    color: #F5F5F5;
+
+}
+
+.sobre-mi--container{
+    margin: 32px;   
+    width: 70%;
+    align-items: flex-start;
+    
+}
+
+.sobre-mi__texto{
+    text-align: justify;
+}
+
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.Fondo{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('assets/fon_Habilidades.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.Habilidades,
+.aficiones_lista {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 112px;
+    width: 90%;
+    padding: 0px;
+}
+
+.Habilidades_elemento,
+.aficiones_elemento {
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: var(--gris-claro, #F5F5F5);
+    padding: 24px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.habilidades,
+.aficiones{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 32px;
+    color: #F5F5F5;
+}
+
+.habilidades__titulo,
+.aficiones__titulo{
+    font-size: 2rem;
+}
+
+.habilidades__icono,
+.aficiones__icono{    
+    width: 100px;
+}
+
+.habilidades__nombre,
+.aficiones__nombre{
+    text-align: left;
+    font-size: 1rem;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.formacion{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
+              url('assets/fondo_studing.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.formacion__titulo{
+    font-size: 2rem;
+}
+
+.formacion__lista{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:  baseline;
+    justify-content:  space-around;
+    
+    
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+.proyectos{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
+              url('assets/fondo_proyects.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.proyectos__elemento{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 10px;
+}
+
+.proy__elemen_revers{
+    flex-direction: row-reverse;
+}
+.proyectos__Boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.proyectos__elemento--boton{
+    border-radius: 8px;
+    background: var(--azul, #15516d);
+    padding: 12px 35px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: var(--blanco, #FFF);
+}
+
+
+
+.pandoraRevanderg{
+    width: 585px;
+    height: 315px;
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+
+
+.contacto {
+    height: auto; 
+    color: var(--color-de-fondo);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__imagen {
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+.contacto__imagen img {
+    max-width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.contacto__contenido {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacto__titulo {
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+}
+
+.contacto__formulario {
+    width: 100%; /* Para que el formulario ocupe el ancho completo del contenedor */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacio entre cada campo */
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.contacto__boton{
+    background-color: #15516d;
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+}
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+@media (min-width: 768px) and (max-width:1024px){
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+        display: none;
+    }
+
+    .correo{
+        font-size: 1rem;
+    }
+
+    .presentacion__titulo{
+        font-size: 30px;
+    }
+
+    .presentacion__subtitulo{
+        font-size: 20px;
+    }
+
+    .presentacion__foto{
+        border-radius: 50%; 
+        height: 70%;
+           
+        /*margin: 0px 25px;*/
+    }
+
+    .habilidades,
+    .aficiones{
+        height: auto;
+        
+    }
+
+    .Habilidades,
+    .aficiones_lista {
+        display: flex;
+        flex-flow: row wrap;                  
+        width: 100%;
+        padding: 0px;
+        /* margin: 20px 40px; */
+    }
+
+    .habilidades__icono,
+    .aficiones__icono{    
+        width: 100px;
+    }
+
+    .proyectos{
+        height: 1500px;
+    }
+    .proyectos__elemento{
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .contacto {
+        height: auto;
+    } 
+    .contacto__imagen img {
+        max-width: auto; /* Ajusta el tamaño de la imagen según sea necesario */
+        height: auto;
+    }
+    
+    .contacto__contenido {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}   
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.2rem;
+        display: none;
+    }
+
+    .correo{
+        font-size: 1rem;
+    }
+
+    .presentacion{
+        flex-direction: column;
+    }
+
+    .habilidades,
+    .aficiones{
+        height: auto;
+        
+    }
+
+    .Habilidades,
+    .aficiones_lista {
+        display: flex;
+        flex-flow: row wrap;                  
+        width: 90%;
+        padding: 0px;
+        /* margin: 20px 40px; */
+    }
+
+    .habilidades__icono,
+    .aficiones__icono{    
+        width: 100px;
+    }
+
+    .formacion{
+        height: auto;
+        color: white;
+    }
+
+    .formacion__lista{
+        flex-direction: column;
+        width: 80%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        
+    }
+
+    .proyectos{
+        height: 1500px;
+    }
+
+    .proyectos__elemento{
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .contacto{
+        width: 100%;
+    }
+    .contacto__imagen{
+        display: none;
+    }
+
+    .contacto__contenido{
+        width: 90%;
+        align-items: center;
+    }
+    .contacto__formulario {
+        width: 100%; /* Para que el formulario ocupe el ancho completo del contenedor */
+        display: flex;
+        flex-direction: column;
+        gap: 16px; /* Espacio entre cada campo */
+    }
+    
+}   
